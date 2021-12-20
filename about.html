@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">	
+  <title>About me</title>
+
+  <!-- CSS  -->
+  <!-- <link rel="stylesheet" type="text/css" href="image-grid.css"> -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style2.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    .INsection{
+      padding: 50PX 50PX 50PX 10%;
+    }
+   
+    
+    .photo-g{
+      width: 100%;
+      /* margin: auto; */
+      /* display: grid; */
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 30px;
+    }
+    .iimage{
+      position: relative;
+      height: 170px;
+      width: 270PX;
+      border-radius: 20px;
+      box-shadow: 3px 3px 5px lightgray;
+      cursor: pointer;
+    }
+    .iimage img{
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      /* background-size:cover; */
+    }
+    
+    .iimage::after{
+      content: "" ;
+      color: rgb(0, 0, 0);
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      border-radius: 20px;
+      height: 0;
+      background-color: rgba(0, 0, 0, 0.356);
+      transition: .3s;
+    }
+
+    .iimage::before{
+      content: "Read me" ;
+      color: rgb(255, 255, 255);
+      top: 50%;
+      left: 50%;
+      transform: translate(-22%,-40%);
+      position: absolute;
+      font-size: 30px;
+      font-weight: 700;
+      width: 100%;
+      /* margin-top: -100%; */
+      border-radius: 20px;
+      opacity: 0;
+      transition: .3s;
+      transition-delay: .2s;
+      z-index: 1;
+    }
+    .iimage:hover::after{
+      height: 100%;
+    }
+    .iimage:hover::before{
+      margin-top: 0;
+      opacity: 1;
+    }
+    .me{
+      width: 300px;
+      height: 300px;
+      background-size: cover;
+      background-image: url(./images/people1.png);
+      border-radius: 50%;
+
+    }
+
+
+
+    .aboetcontainer{
+      /* background-color: rgb(179, 179, 179); */
+      height: 100%;
+      padding: 40px 80px;
+      display: flex;
+      /* margin: 0; */
+      
+    }
+    .aimg{
+      margin: 0 auto;
+      padding: 20px 20px 50px 20px;
+    }
+    .aimg img{
+      width: 200px;
+      height: 200px;
+      border-radius: 200px;
+      background-size: cover;
+      background: center;
+      
+    }
+    .abcard{
+      padding: 30px;
+      width: 400px;
+      min-width: 300px;
+      height: 750px;
+      color: white;
+      /* border-radius: 15px; */
+      margin:10px;
+     background: rgb(110, 150, 160);
+    animation: mymove 3s infinite;
+      /* -webkit-animation: mymove 3s infinite; */
+}   
+
+
+@keyframes mymove{
+from{ background-color:rgb(93, 116, 167);}
+to{background-color:rgb(189, 89, 94);}
+}
+
+.abtme h1{
+  margin: 0;
+  padding: 0px;
+  color: rgb(151, 162, 173);
+}
+.abtme h5{
+  margin-top: 20px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+}
+.abtme h6{
+  margin-top: 20px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+}
+/* ---------------------------- */
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+.column img:hover{
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.349);
+  background-blend-mode: multiply;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+
+@media screen and (max-width: 1100px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+#gotop {
+    position: fixed;
+    border-radius: 50px;
+    right: 20px;
+    bottom: 30px;
+    padding: 8px 18px;
+    font-size: 25px;
+    background: rgba(128, 128, 128, 0.445);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+  </style>
+</head>
+<body>
+   <div id="gotop">˄</div>
+  <div class="header1">
+
+    <a href="#" class="logo"><img src="icon/logo.svg" alt=""></a>
+    <a class="header3" id="header3"><img src="./icon/926AEBCB-55F1-492F-8EB5-05100E4F9BC3.png" alt=""></a>
+    <div class="navbar1">
+        <a class="nin" href="home.html">HOME</a>
+        <a class="nin" href="about.html">ABOUT</a>
+        <a class="nin" id="project" href="#PROJECT">PROJECT</a>
+        <a class="nin" href="about.html">CONCACT</a>
+        <a class="nin" id="member"><img src="icon/icon-member.svg" alt=""></a>
+        
+    </div>
+    <div class="page1up">
+        <div class="forms">
+            <h2>Login Here</h2>
+            <input type="email" name="email" placeholder="Enter Email Here">
+            <input type="password" name="" placeholder="Enter Password Here">
+            <button class="btnn"><a >Login</a></button>
+    
+            <p class="link">Don't have an account<br>
+            <a >Sign up </a> here</a></p>
+            <p class="liw">Log in with</p>
+    
+            <div class="icons">
+                <a ><ion-icon name="logo-facebook"></ion-icon></a>
+                <a ><ion-icon name="logo-instagram"></ion-icon></a>
+                <a ><ion-icon name="logo-twitter"></ion-icon></a>
+                <a ><ion-icon name="logo-google"></ion-icon></a>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="pd1">
+            <a href="project.html"><li>product</li></a>
+            <a href="project.html"><li>Graphic works</li></a>
+        </div>
+    </div>
+</div>
+
+  <!-- ---------------------------------------------------------- -->
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="center  abtme">
+          <h1 class="header center aboutme">About me</h1>
+          <h6 class="header col s12 light">2017-2021</h6>
+          <h5 class="header col s12 light">HSIEH JUNG CHIA</h5>
+ 
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="./images/wwwww.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <!-- ------------------------------------------------------ -->
+
+  <div class="aboetcontainer">
+ 
+    <!-- <div class="card abcard col-md-3">
+    <div class="aimg">
+      <img src="./images/people1 - 4.png" alt="">
+    </div>
+    <p>姓名:謝榕珈</p>
+    <p>出生:1998/11/26</p>
+    <p>學歷:畢業於朝陽科技大學</p>
+    <p>信箱:mei36488@gmail.com</p>
+    <p>
+      我是謝榕珈，住在台北市大同區，6月畢業於朝陽科技大學工業設計系。
+            求學中除了接觸工業產品設計以外，自己也多學習了平面設計及些許動畫，接案設計，四年中累積了不少設計
+            經驗，電繪及手繪上有一定的程度。曾於國語日報打工已滿四年，擔任職位為助教導師及櫃檯人員，積極做事也培
+            養了耐心。期望未來的工作還能走與設計相關的產業，在這條路上努力邁進。
+    </p>
+  </div> -->
+<div class="imgboard">
+  <div class="row"> 
+    <div class="column">
+      <img src="./images/page7-3.jpg">
+      <img src="./images/1414.jpg">
+      
+     
+      
+    </div>
+    <div class="column">
+      <img src="./images/page7-2.jpg">
+      <img src="./images/page7.jpg">
+      
+    </div>
+    <div class="column">
+      
+      <img src="./images/208991.jpg">
+      <img src="./images/S__13041678.jpg">
+      <img src="./images/208986.jpg">
+    </div>
+    <div class="column">
+      
+      <img src="./images/S__13729801.jpg">
+      <img src="./images/S__10412083.jpg">
+      <!-- <img src="./images/208986.jpg" style="width:100%"> -->
+    </div>
+    
+   
+  </div>
+</div>
+ 
+</div>
+   <!-- ------------------------------------------------------ -->
+   <div class="aboutt">
+   <div class="container abocontainer">
+     <div class="row">
+       <div class="col-md-6">
+          <!-- <h4>About me</h4> -->
+          <div class="aboutimg">
+            <img class="aboutimg2" src="./images/people1.png" alt="">
+          </div>
+       </div>
+       <div class="col-md-6 autobiography">
+         <h5>autobiography</h5>
+         <p>我是謝榕珈，住在台北市大同區，6月畢業於朝陽科技大學工業設計系。
+          求學中除了接觸工業產品設計以外，自己也多學習了平面設計及些許動畫，接案設計，四年中累積了不少設計
+          經驗，電繪及手繪上有一定的程度。曾於國語日報打工已滿四年，擔任職位為助教導師及櫃檯人員，積極做事也培
+          養了耐心。期望未來的工作還能走與設計相關的產業，在這條路上努力邁進。</p>
+      </div>
+     </div>
+   </div>
+  </div>
+   
+   
+   
+   
+   
+   <!-- <div class="abmee">
+    <section class="about" id="about">
+      <div class="max-width">
+          
+          <div class="about-content">
+            <div class="col-md-6">
+            <h2 class="title">About me</h2>
+              <div class="column left">
+                  <img src="images/profile-1.jpeg" alt="">
+              </div>
+            </div>
+              <div class="column row col-md-6">
+                  <div class="text">I'm Prakash and I'm a <span class="typing-2"></span></div>
+                  <p>我是謝榕珈，住在台北市大同區，6月畢業於朝陽科技大學工業設計系。
+                    求學中除了接觸工業產品設計以外，自己也多學習了平面設計及些許動畫，接案設計，四年中累積了不少設計
+                    經驗，電繪及手繪上有一定的程度。曾於國語日報打工已滿四年，擔任職位為助教導師及櫃檯人員，積極做事也培
+                    養了耐心。期望未來的工作還能走與設計相關的產業，在這條路上努力邁進。</p>
+                  <a href="#">Download CV</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  </div> -->
+<!-- ---------------------------- -->
+<div class="container Contactmecontainer">
+<section class="contact" id="contact">
+  <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+          <div class="column left Contactme1">
+              <div class="text">Contact me</div>
+              <p> 如有需要聯繫我，請填寫表單以及連繫事項，收到後會盡快回復</p>
+              <div class="icons">
+                  <!-- <div class="row"> -->
+                      
+                      <div class="info">
+                          <div class="head">Name</div>
+                          <div class="sub-title">Sahen</div>
+                      </div>
+                  <!-- </div> -->
+                  <!-- <div class="row"> -->
+                      
+                      <div class="info">
+                          <div class="head">Address</div>
+                          <div class="sub-title">台北市大同區</div>
+                      </div>
+                  <!-- </div> -->
+                  <!-- <div class="row"> -->
+                      
+                      <div class="info">
+                          <div class="head">Email</div>
+                          <div class="sub-title">mei36488@gmail.com</div>
+                      </div>
+                  <!-- </div> -->
+              </div>
+          </div>
+          <div class="column row">
+              <div class="text">Message me</div>
+              <form action="#">
+                  <div class="fields">
+                      <div class="field name">
+                          <input type="text" placeholder="Name" required>
+                      </div>
+                      <div class="field email">
+                          <input type="email" placeholder="Email" required>
+                      </div>
+                  </div>
+                  <div class="field">
+                      <input type="text" placeholder="Subject" required>
+                  </div>
+                  <div class="field textarea">
+                      <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                  </div>
+                  <div class="button-area">
+                      <button type="submit">Send message</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</section>
+</div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="white-text">Sahen</h5>
+          <p class="grey-text text-lighten-4">這裡包含了我大學四年的作品，有工業設計以及平面設計作品，這四年累積了不少經驗，在這裡與大家分享我的創作。</p>
+
+
+        </div>
+        <div class="col-md-4 center">
+          <h5 class="white-text">Project</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Product</a></li>
+            <li><a class="white-text" href="#!">Graphic works</a></li>
+            <!-- <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li> -->
+          </ul>
+        </div>
+        <div class="col-md-4 center">
+          <h5 class="white-text">Recommend</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Arcle</a></li>
+            <li><a class="white-text" href="#!">Show u</a></li>
+            <li><a class="white-text" href="#!">Rexon</a></li>
+            <li><a class="white-text" href="#!">Isle</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="https://www.facebook.com/profile.php?id=100007584160250">Sahen</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- -*------------------------------------------------------ -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <script>
+
+$("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 25){
+        $('.header1').fadeIn("fast");
+    } else {
+        $('.header1').stop().fadeOut("fast");
+    }
+});
+
+    $(document).ready(function(){
+  $("#member").click(function(){
+  $(".forms").fadeToggle();
+  });
+});
+
+
+$(document).ready(function(){
+  $("#project").click(function(){
+  $(".product").fadeToggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#header3").click(function(){
+  $(".navbar1").fadeToggle();
+  });
+});
+
+$(document).ready(function(){
+  $(".c").hover(function(){
+  $(".page4-3").fadeToggle();
+  });
+});
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+    
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">	
+    
+    <title>Arcle</title>
+    <link href="css/product.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <style>
+    
+        body{font-family: arial,"Microsoft JhengHei","微軟正黑體",sans-serif !important;}
+        @import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
+
+        body{
+            margin: 0;
+            background-color: black;
+        }
+        
+        .product{
+    display: none;
+}
+.logo:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+        @media only screen and (max-width : 850px){
+            
+            .header3 img{
+            height:20px;
+            width: auto; 
+            position:absolute;
+            right:130px;
+        }
+        .navbar1{
+            background-color: rgba(0, 0, 0, 0.425);
+            width: 100%;
+            position: absolute;
+            top: 90px;
+            display: none;
+            backdrop-filter: blur(.4rem);
+        }
+        .navbar1 a{
+            display: flex;
+            margin-bottom: 10px;
+            margin-top: 5px;
+            color: white;
+            margin-left: 10px;
+            margin-left: 50px;
+        }
+        .navbar1 img{
+            height: 20px;
+            width: auto; 
+        }
+        .nin{
+            text-decoration: none;
+        }
+            .header1{
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.295);
+            height: 90px;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            backdrop-filter: blur(.4rem);
+        }
+
+            /* .nin{
+            display: none;
+            
+        } */
+        .logo img{
+            height: 30px;
+            width: auto;
+            margin-left: 120px;
+        }
+        .pd1 a{
+         color: rgba(255, 255, 255, 0.795);
+         margin-right: 15px;
+        }
+.pd1{
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(27, 29, 34, 0.603),rgba(0,0,0,0.8));
+    position: absolute;
+    left:150px;
+    top: 155px;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    list-style: none;
+    display: flex;
+    
+}
+.product{
+    display: none;
+}
+        }
+        
+        @media only screen and (min-width : 851px){
+
+        
+        .header3{
+            display: none;
+        }
+        .header1{
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.295);
+            height: 90px;
+            align-items: center;
+            position: fixed;
+            backdrop-filter: blur(.4rem);
+        }
+
+        .logo img{
+            height: 30px;
+            width: auto;
+            margin-left: 120px;
+        }
+        .navbar1{
+            font-size: 16px;
+            position:absolute;
+            right:130px;
+            margin-right: 0px;
+           
+        }
+        .navbar1 a{
+            color: white;
+            margin-left: 10px;
+            margin-left: 50px;
+        }
+        .navbar1 img{
+            height: 20px;
+            width: auto; 
+        }
+        .nin{
+            text-decoration: none;
+        }
+        .navbar1 a:hover{
+            text-decoration: underline;
+        }
+        .pd1 a{
+    color: rgba(255, 255, 255, 0.795);
+
+}
+.pd1{
+    width: 170px;
+    height: 70px;
+    background: linear-gradient(to top, rgba(27, 29, 34, 0.603),rgba(0,0,0,0.8));
+    position: absolute;
+    right: 200px;
+    top: 80px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    /* display: none; */
+    color: white;
+    list-style: none;
+}
+.Product{
+    display: none;
+}
+    }
+/* -------------------------------------------------------- */
+
+
+.forms{
+    width: 285px;
+    height: 400px;
+    background: linear-gradient(to top, rgba(33, 33, 46, 0.8),rgba(0,0,0,0.8));
+    position: absolute;
+    top: 180%;
+    right:5%;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+    display: none;
+}
+
+.forms h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000000;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.forms input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #000000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.forms input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: rgb(207, 207, 207);
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #9c9c9c;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.forms .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.404);
+}
+
+.forms .link a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons ion-icon{
+    color: rgb(122, 122, 122);
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+
+}
+
+.icons ion-icon:hover{
+    color: #bbbbbb;
+}
+        .page2up{
+            position: absolute;
+            background-color: rgb(67, 73, 77);
+            display: flex;
+            align-items: center;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            border-radius: 25px;
+            border-style:solid;
+            border-width: 10px;
+            border-color: rgba(255, 255, 255, 0.219);
+        }
+        .page2up p{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding:40px 20px;
+            color: white;
+        }
+        @media only screen and (min-width : 851px){
+        .bag1{
+            background-color: black;
+            width: 100%;
+            height: 800px;
+            background-size: cover;
+            background-image:url(./images/home-background1.jpg);
+            background-repeat:no-repeat;
+            padding-top:12% ;
+            background-position: right;
+        }
+        .p1card{
+            width: 450px;
+            height: 500px;
+            margin-left: 12%;
+            
+        }
+        .p1card p{
+            color: white;
+            font-size: 14px;
+            margin-bottom: 60px;
+        }
+        .p1card h3{
+            color: white;
+            margin-bottom: 40px;
+        }
+        .logo2{
+            width: 440px;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        .icon1{
+            width: 220px;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        .readme{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+        .readme{
+            background-color: rgba(104, 116, 124, 0.658);
+            width: 160px;
+            height: 45px;
+            padding-top: 10px;
+            padding-left: 30px;
+            border-radius: 10px;
+        }
+        .readme:hover{
+            background-color: rgba(236, 236, 236, 0.644);
+            width: 170px;
+            height: 45px;
+            padding-top: 10px;
+            padding-left: 35px;
+            border-radius: 10px;
+            transition: .5s ;
+            text-decoration: underline;
+        }
+    }
+    @media only screen and (max-width : 850px){
+        .bag1{
+            background-color: black;
+            width: 100%;
+            height: 800px;
+            background-size: cover;
+            background-image:url(./images/home-background1.jpg);
+            background-repeat:no-repeat;
+            padding-top:12% ;
+            background-position: right;
+        }
+        
+        .p1card{
+            padding-top: 15%;
+            width: 300px;
+            height: 400px;
+            margin-left: 5%; 
+        }
+        .p1card p{
+            color: white;
+            font-size: 14px;
+            margin-bottom: 60px;
+        }
+        .p1card h3{
+            color: white;
+            margin-bottom: 40px;
+        }
+        .logo2{
+            width: 300px;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        .icon1{
+            width: 220px;
+            height: auto;
+            margin-bottom: 25px;
+        }
+        .readme{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            
+        }
+        .readme{
+            background-color: rgba(104, 116, 124, 0.658);
+            width: 160px;
+            height: 45px;
+            padding-top: 10px;
+            padding-left: 30px;
+            border-radius: 10px;
+        }
+        .readme:hover{
+            background-color: rgba(236, 236, 236, 0.644);
+            width: 170px;
+            height: 45px;
+            padding-top: 10px;
+            padding-left: 35px;
+            border-radius: 10px;
+            transition: .5s ;
+            text-decoration: underline;
+        }
+    }
+  /* -----------------------------------------------------------       */
+        .page2{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .bag2{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(28, 28, 31);
+            background-color: rgba(0, 0, 0, .6);
+            background-blend-mode: multiply;
+            background-image: url(./images/pexels-photo-1687141.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 105px;
+            
+        }
+        .imgaround{
+            width: 450px;
+            height: 400px;
+            
+        }
+        .wrap {
+            max-width: 800px;
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .imgs-wrap {
+            width: 4000px;
+            display: flex;
+            transform: translateX(0px);
+            transition: .5s;
+        }
+
+        .imgs-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slider-dots {
+            position: absolute;
+            display: flex;
+            bottom: 0;
+
+            /* width: 100%;
+            justify-content: center; */
+
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .slider-dots li {
+            width: 40px;
+            height: 10px;
+            border: 1px solid #fff;
+            margin: 0 4px;
+        }
+        .bagup1{
+            width: 150px;
+            height: 350px;
+            background-color: rgba(0, 0, 0, 0.301);
+            margin-top: 70px;
+        }
+        .bagup2{
+            width: 650px;
+            height: 380px;
+            background-color: rgba(0, 0, 0, 0.548);
+            margin-top: 70px;
+            margin-bottom: 70px;
+            backdrop-filter: blur(.2rem);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            padding-top: 30px;
+        }
+        .bagup2 img{
+            width: 70%;
+        }
+        @media only screen and (max-width : 1200px){
+            .page2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+        }
+        @media only screen and (max-width : 645px){
+            .bagup1{
+            display: none;
+        }
+        }
+/* ------------------------------------------------------------------ */
+            .page33{
+                margin-top: 50px;
+                margin-bottom: 60px;
+            }
+            .members{
+                color: white;
+                text-align: center;
+                margin: 30px;
+            }
+            .peopleimg{
+            width: 200px;
+            height: 225px;
+            background-color: rgb(57, 73, 88);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(./images/people1.png)
+        }
+        .mycard{
+            width: 280px;
+            height: 250x;
+            padding: 20px 0;
+            background-color: rgba(31, 37, 54, 0.603);
+            margin-left: 36px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .peopleimg:hover{
+            background-color: rgba(236, 236, 236, 0.644);
+            transition: 1s;
+            border-radius: 70px;
+        }
+        .pcname{
+            margin-top: 18px;
+            margin-bottom: 0;
+            color: white; 
+        }
+        
+        .pname2{
+            color: white;
+            font-size: 10px;
+            margin-top: 2px;
+        }
+        .pname{
+            color: white;
+            font-size: 10px;
+            margin-top: 2.4px;
+            margin-bottom: 2.4px;
+        }
+        .pname a{
+            text-decoration: none;
+        }
+        .pname:hover{
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 15px;
+            text-decoration: underline;
+        }
+
+        .peopleimg2{
+            width: 200px;
+            height: 225px;
+            background-color: rgb(57, 73, 88);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(./images/people2.png)
+        }
+        .peopleimg2:hover{
+            background-color: rgba(236, 236, 236, 0.644);
+            transition: 1s;
+            border-radius: 70px;
+        }
+        .peopleimg3{
+            width: 200px;
+            height: 225px;
+            background-color: rgb(57, 73, 88);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(./images/people3.png)
+        }
+        .peopleimg3:hover{
+            background-color: rgba(236, 236, 236, 0.644);
+            transition: 1s;
+            border-radius: 70px;
+        }
+/* ---------------------------------------------------------------------*/
+        .no4container{
+            padding:40px 150px;
+            background-color: rgb(255, 255, 255);
+        }
+        .page4{
+            padding-top: 60px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .page4img{
+            width: 90%;
+            height: 90%;
+            background-image: url(./images/pg4.gif);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .pt4 h2{
+            text-align: center;
+        }
+        .pt4 p{
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+        }
+/* --------------------------------------------------------------------------- */
+        .no4container{
+            padding: 0%;
+        }
+        .p4card{
+            padding: 20px;
+            width: 100%;
+            height: 250px;
+            background-color: rgba(236, 236, 236, 0.644);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p4card:hover{
+            background-color: rgba(42, 42, 43, 0.822);
+            transition: .3s;
+            color: white;
+        }
+        .p4card2{
+            padding: 20px;
+            width: 100%;
+            height: 250px;
+            background-color: rgba(236, 236, 236, 0.644);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p4card2:hover{
+            background-color: rgba(42, 42, 43, 0.822);
+            transition: .3s;
+            color: white;
+        }
+        .p4card3{
+            padding: 20px;
+            width: 100%;
+            height: 250px;
+            background-color: rgba(236, 236, 236, 0.644);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .p4card3:hover{
+            background-color: rgba(42, 42, 43, 0.822);
+            transition: .3s;
+            color: white;
+        }
+        .p4cardimg{
+            /* width: 150px; */
+            /* height: 50%; */
+            /* background-image: url(./images/page43.png); */
+            background-repeat: no-repeat;
+            background-size: contain;  
+        
+        }
+        
+        .p4cardimg2{
+            /* width: 150px; */
+            /* height: 50%; */
+            
+            /* background-image: url(./images/page42.png); */
+            background-repeat: no-repeat;
+            background-size: contain;  
+        }
+        .p4cardimg3{
+            /* width: 150px; */
+            /* height: 50%; */
+            /* background-image: url(./images/page41.png); */
+            background-repeat: no-repeat;
+            background-size: contain;  
+        }
+        .p4t{
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .p4t h1{
+            font-weight:bold;
+        }
+        .p4t2{
+            margin-top: 30px;
+        }
+        .page4-img{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            
+        }
+        .page4-3,.page4-32,.page4-33{
+            width: auto;
+            height: 750px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            margin-left: 15px;
+        }
+        
+        
+        .page4-32 img,.page4-3 img,.page4-33 img{
+            height: 70%;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        
+/* -------------------------------------------------------------------         */
+       .page5{
+           height: 55%;
+           width: 100%;
+           padding: 60px;
+       } 
+       .page5 h3{
+           color: white;
+           text-align: center;
+       }
+       .page5 video{
+           width: 90%;
+           height: 90%;
+       }
+/* ---------------------------------------------------------------        */
+
+/* ------------------------------------------------------ */
+.ytc{
+     display: flex;
+     justify-content: center;
+ }
+.center{
+  position: relative;
+  width: 770px;
+  /* left: -70px; */
+  perspective: 1200px;
+}
+.center .img-card{
+  position: relative;
+  height: 350px;
+  width: 400px;
+  transform-style: preserve-3d;
+  transition: transform .5s ease-in;
+}
+.img-card img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.img-card img:nth-child(1){
+  transform: rotateX(-270deg) translateY(-175px);
+  transform-origin: top left;
+}
+.img-card img:nth-child(2){
+  transform: translateZ(175px);
+}
+.img-card img:nth-child(3){
+  transform: rotateX(-90deg) translateY(175px);
+  transform-origin: bottom center;
+}
+.img-card img:nth-child(4){
+  transform: rotateX(-180deg) translateY(350px) translateZ(175px);
+  transform-origin: bottom right;
+}
+#tab-1:checked ~ .img-card{
+  transform: rotateX(-90deg);
+}
+#tab-2:checked ~ .img-card{
+  transform: rotateX(0deg);
+}
+#tab-3:checked ~ .img-card{
+  transform: rotateX(90deg);
+}
+#tab-4:checked ~ .img-card{
+  transform: rotateX(180deg);
+}
+.sliders{
+  position: absolute;
+  display: block;
+  right: 0;
+  top: -30px;
+  
+}
+.sliders label{
+  height: 98px;
+  width: 110px;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 6px 0;
+  border: 2px solid #2d4052;
+}
+.sliders label:nth-child(1){
+  margin-top: 0;
+}
+label img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(1);
+  opacity: .9;
+}
+label img:hover,
+#tab-1:checked ~ .sliders label:nth-child(1) img,
+#tab-2:checked ~ .sliders label:nth-child(2) img,
+#tab-3:checked ~ .sliders label:nth-child(3) img,
+#tab-4:checked ~ .sliders label:nth-child(4) img{
+  filter: grayscale(0);
+  opacity: 1;
+}
+input{
+  display: none;
+}
+/* -------------------------- */
+.page-footer{
+  background-color: black;
+}
+.search1 button{
+  background-color: aliceblue;
+  color: black;
+  border-radius: 5px;
+  width:100px;
+  height: 40px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+.search1 button a{
+  color: black;
+}
+.search1 button:hover{
+  background-color: rgb(143, 143, 143);
+  transition: .5s;
+}
+.page-footer nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.page-footer p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #797979;
+}
+
+.parallax-container {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+.page-footer{
+    background-color: black;
+}
+#gotop {
+    position: fixed;
+    border-radius: 50px;
+    right: 20px;
+    bottom: 30px;
+    padding: 8px 18px;
+    font-size: 25px;
+    background: rgba(128, 128, 128, 0.445);
+    color: #FAFCFD;
+    cursor: pointer;
+    z-index: 1000;
+}
+    </style>
+</head>
+<body>
+    <div id="gotop">˄</div>
+    <div class="header1">
+
+        <a href="#" class="logo"><img src="icon/logo.svg" alt=""></a>
+        <a class="header3" id="header3" ><img src="./icon/926AEBCB-55F1-492F-8EB5-05100E4F9BC3.png" alt=""></a>
+        <div class="navbar1">
+            <a class="nin" href="home.html">HOME</a>
+            <a class="nin" href="about.html">ABOUT</a>
+            <a class="nin" id="project" href="#PROJECT">PROJECT</a>
+            <a class="nin" href="about.html">CONCACT</a>
+            <a class="nin" id="member"><img src="icon/icon-member.svg" alt=""></a>
+            
+        </div>
+        <div class="page1up">
+            <div class="forms">
+                <h2>Login Here</h2>
+                <input type="email" name="email" placeholder="Enter Email Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="btnn"><a>Login</a></button>
+        
+                <p class="link">Don't have an account<br>
+                <a>Sign up </a> here</a></p>
+                <p class="liw">Log in with</p>
+        
+                <div class="icons">
+                    <a ><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a ><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a ><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a><ion-icon name="logo-google"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <div class="pd1">
+                <a href="project.html"><li>product</li></a>
+                <a href="project.html"><li>Graphic works</li></a>
+            </div>
+        </div>
+    </div>
+<!-- ---------------------------------------------------------- -->
+    <div class="page1">
+        
+        
+        <div class="page2up">
+            <p> 自工業革命以來，科技快速且蓬勃發展，人不斷要求精進生活的品
+                質，養成許多不好的陋習，在利益為主的經濟體系下，工業發展帶來
+                前所未有的汙染，使近年來溫室效應不斷增強。
+                探討溫室氣體產生的負面災害，從都市角度切入議題核心，
+                探討現今生活品質與溫室氣體所產生的正相關性，針對城市交通進一
+                步調查分析，找出不當使用交通的缺失，進而研擬改善城市內部交通
+                汙染源。
+                探討以台灣使用交通運輸的方式、地形、文化、政策、發展及未來
+                趨勢，進一步找出符合台灣的運輸型態，並提出城市內汙染連鎖效應
+                與交通的關西，以產品形式改善降低城市內部汙染。達到更友善的居
+                住環境。</p>
+        </div>
+        <div class="bag1">
+            <div class="p1card .col-lg-5">
+           <h3>電動摺疊自行車</h3>
+           <img class="logo2" src="./icon/logo2.svg" alt="">;
+           <img class="icon1" src="./icon/icon1.svg" alt="">
+           <p>油車促使城市內部汙染加重，電動機車為近年新型態交通模式，我們期望，結合大眾運輸交通系統，達到真正的減少車輛使用時間，且針對台灣人的使用模式，碩造出上班購物皆能使用的車種，並且更加輕量化車體，使產品能帶入建物內充電停放、進入大眾運輸交通及轎車後車箱，達到更為方便的使用方式。</p>
+           <div class="readme" id="readme">Read more</div>
+             </div>
+        </div>
+    </div>
+<!-- --------------------------------------------------------   -->
+    <div class="page2">
+        <div class="bag2">
+            <div class="row">
+                <div class="bagup1"></div>
+                <div class="imgaround">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./images/1in.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/2in.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./images/3in.png" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                </div>
+                <div class="bagup2">
+                    <h2>About</h2>
+                    <p>台灣機車使用習慣</p>
+                    <img src="./icon/iconpage2.svg" alt="">
+                    
+                </div>
+            </div>
+       
+        </div>
+    </div>
+<!-- ------------------------------------------------------------- -->
+<div class="container page33 area">
+    <h3 class="members">members</h3>
+    <div class="row">
+        
+        <div class="col-md-4">
+        <div class="mycard">
+            <div class="peopleimg"><a href="">
+            
+            </a></div>
+            <p class="pcname">謝榕珈</p>
+            <p class="pname2">HSIEH JUNG CHIA</p>
+            <a href=""><p class="pname">mei36488@gmail.com</p></a>
+        </div>
+        
+        </div>  
+        <div class="col-md-4">
+            <div class="mycard">
+                <div class="peopleimg2"><a href="">
+                
+                </a></div>
+                <p class="pcname">張唯哲</p>
+                <p class="pname2">CHANG WEI CHE</p>
+                <a href=""><p class="pname">dsaaa298@gmail.com</p></a>
+            </div>
+            
+            </div> 
+            <div class="col-md-4">
+                <div class="mycard">
+                    <div class="peopleimg3"><a href="">
+                    
+                    </a></div>
+                    <p class="pcname">張兆玄</p>
+                    <p class="pname2">CHANG CHAO HSUAN</p>
+                    <a href=""><p class="pname">a535942@gmail.com</p></a>
+                </div>
+                
+                </div> 
+    </div>
+</div>
+<!-- ------------------------------------------------------------------ -->
+<div class="no4container">
+    <div class="row">
+        <div class="col-lg-5 page4">
+            <div class="pt4">
+                <h2>Project</h2>
+                <p>項目介紹</p>
+            </div>
+            <div class="page4img">
+                
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="tab">
+                <button class="tablinks bbt1" onclick="openCity(event, 'London')" id="defaultOpen">
+                    <div class="p4t" id="p4t">
+                        <h1>01</h1>
+                    <p>產品外型介紹</p>
+                    <p class="p4t2">外型與色彩</p>
+                    </div>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">
+                    <div class="p4t" id="pt42">
+                        <h1>02</h1>
+                    <p>產品機構介紹</p>
+                    <p class="p4t2">棘輪與彈簧</p>
+                    </div>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')"><div class="p4t" id="pt43">
+                    <h1>03</h1>
+                <p>性能介紹</p>
+                <p class="p4t2">里程與速度</p>
+                </div></button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h3>外型與色彩</h3>
+                <p>Arcle的造型取自一個圓，側邊看過去能清楚看見車體的圓弧造型，色彩以藍灰色為主，期望帶出在城市也能輕鬆的氛圍，金屬噴漆分別為亮面金屬、霧面小磨砂，以及亮面金屬</p>
+                <img src="./images/S__17596480.jpg" alt="">
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>棘輪與彈簧</h3>
+                <p>這是一種單向的棘輪機構，用於在展開時穩定電動自行車的車身。 彈簧用於保持緊密配合彈簧可以在折時被壓縮和固定，
+                    設計規範
+• 尺寸:折疊後長邊小於等於 165cm、長+寬+高和小於等於 220cm--台灣捷運
+行李托運標準
+• 重量:不含電池重量 40kg 以下
+• 電池類型:18650 鋰電池、36V
+• 效能航程:40~50km/h</p>
+                <img src="./images/S__17596481.jpg" alt="">
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>外型與色彩</h3>
+                <p>
+                    車身尺寸【展開】:155*65*100/
+                    車身重量:45KG/
+                    輪子規格:10IN/
+                    
+                    電池規格:18650/
+                    電機型號:永磁無刷發動機/
+                    輸出功率:350W/
+                    續航里程:60KM/
+                    最大時速:45KM/
+                    充電時間:2H/
+                    充電器:外接式/
+                    避震系統:S20 壓縮避震器/
+                    
+                </p>
+                <img src="./images/S__17596483.jpg" alt="">
+              </div>
+        </div>
+        <!-- <div class="col-lg-3">
+            <div class="p4card" id="p4card">
+                <div class="p4cardimg">
+
+                </div>
+                <div class="p4t" id="p4t">
+                    <h1>01</h1>
+                <p>產品外型介紹</p>
+                <p class="p4t2">外型與色彩</p>
+                </div>
+            </div>
+            <div class="p4card2" id="p4card2">
+                <div class="p4cardimg2">
+
+                </div>
+                <div class="p4t" id="pt42">
+                    <h1>02</h1>
+                <p>產品機構介紹</p>
+                <p class="p4t2">棘輪與彈簧</p>
+                </div>
+                
+            </div>
+            <div class="p4card3"  id="p4card3">
+                <div class="p4cardimg3">
+
+                </div>
+                <div class="p4t" id="pt43">
+                    <h1>03</h1>
+                <p>性能介紹</p>
+                <p class="p4t2">里程與速度</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 page4-img">
+            <div class="page4-3"><img src="./images/page4-1.png" alt=""></div>
+            <div class="page4-32"><img src="./images/page4-2.png" alt=""></div>
+            <div class="page4-33"><img src="./images/page4-3.png" alt=""></div>
+        </div> -->
+    </div>
+</div>
+<!-- -------------------------------------------------------------------- -->
+<div class="page5">
+    <h3>
+        Film
+    </h3>
+    <div class="row">
+        <div class="col-lg-6">
+            <video src="./images/657528440.462787.mp4" controls></video>
+        </div>
+        <div class="col-lg-6">
+            <video src="./images/657528440.424488.mp4" controls></video>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------------------------------------------------->
+<!-- <div class="container ytc">
+        <div class="center">
+            <input type="radio" checked name="active" id="tab-1">
+            <input type="radio" name="active" id="tab-2">
+            <input type="radio" name="active" id="tab-3">
+            <input type="radio" name="active" id="tab-4">
+            <div class="sliders">
+              <label for="tab-1"><img src="./images/page6-1.jpg"></label>
+              <label for="tab-2"><img src="./images/99999.24.jpg"></label>
+              <label for="tab-3"><img src="./images/4in.png"></label>
+              <label for="tab-4"><img src="./images/S__17596480.jpg"></label>
+            </div>
+            <div class="img-card">
+              <img src="./images/page6-1.jpg">
+              <img src="./images/99999.24.jpg">
+              <img src="./images/4in.png">
+              <img src="./images/S__17596480.jpg">
+            </div>
+          </div>
+        </div> -->
+
+        <!-- ---------------------------------------------------------- -->
+        <footer class="page-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <h5 class="white-text">Sahen</h5>
+                  <p class=" white-text">這裡包含了我大學四年的作品，有工業設計以及平面設計作品，這四年累積了不少經驗，在這裡與大家分享我的創作。</p>
+        
+        
+                </div>
+                <div class="col-md-4 center">
+                  <h5 class="white-text">Project</h5>
+                  <ul>
+                    <li><a class="white-text" href="#!">Product</a></li>
+                    <li><a class="white-text" href="#!">Graphic works</a></li>
+                    <!-- <li><a class="white-text" href="#!">Link 3</a></li>
+                    <li><a class="white-text" href="#!">Link 4</a></li> -->
+                  </ul>
+                </div>
+                <div class="col-md-4 center">
+                  <h5 class="white-text">Recommend</h5>
+                  <ul>
+                    <li><a class="white-text" href="#!">Arcle</a></li>
+                    <li><a class="white-text" href="#!">Show u</a></li>
+                    <li><a class="white-text" href="#!">Rexon</a></li>
+                    <li><a class="white-text" href="#!">Isle</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container white-text">
+              Made by <a class="brown-text text-lighten-3 white-text" href="https://www.facebook.com/profile.php?id=100007584160250">Sahen</a>
+              </div>
+            </div>
+          </footer>
+<!-- --------------------------------------------------------------------------->
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>	
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+ 
+<script>
+
+// $(document).ready(function(){
+//     $(window).scroll(function(){
+//         if(this.scrolltop>20)  {
+//         $('.header1').addClass("sticky");
+//     }else{
+//         $('.header1').removeClass("sticky");}
+//     });
+    
+$("#gotop").click(function(){
+    jQuery("html,body").animate({
+        scrollTop:0
+    },1000);
+});
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 300){
+        $('#gotop').fadeIn("fast");
+    } else {
+        $('#gotop').stop().fadeOut("fast");
+    }
+});
+
+$(window).scroll(function() {
+    if ( $(this).scrollTop() > 25){
+        $('.header1').fadeIn("fast");
+    } else {
+        $('.header1').stop().fadeOut("fast");
+    }
+});
+
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+$(document).ready(function(){
+  $("#member").click(function(){
+  $(".forms").fadeToggle();
+  });
+});
+
+
+$(document).ready(function(){
+  $("#project").click(function(){
+  $(".product").fadeToggle();
+  });
+});
+
+// $(document).ready(function(){
+//   $("#project").click(function(){
+//   $(".pd1").toggle();
+//   });
+// });
+
+$(document).ready(function(){
+  $("#header3").click(function(){
+  $(".navbar1").fadeToggle();
+  });
+});
+
+    
+$(document).ready(function(){
+  $("#readme").click(function(){
+  $(".page2up").fadeToggle();
+  });
+});
+// -----------------------------------------------
+$(document).ready(function(){
+  $("#p4card").hover(function(){
+  $(".page4-3").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#p4card2").hover(function(){
+  $(".page4-32").toggle();
+  });
+});
+
+$(document).ready(function(){
+  $("#p4card3").hover(function(){
+  $(".page4-33").toggle();
+  });
+});
+</script>
+
+</body>
+</html>
